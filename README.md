@@ -1,4 +1,5 @@
 # Py3-References
+## Methods and Usage
 
 File Read Write Methods
 
@@ -47,4 +48,16 @@ bugs.update({'spider':22}) #similar to extend
 bugs.get('fly') #retrive value
 del bugs['spider']
 
+```
+
+## Examples
+###List Comprehension
+Remove Empty Strings
+```python
+test_list = ["", "I", "", "am","","the","", "best", ""] 
+
+test_list1 = [i for i in test_list if i]   
+
+print ("Original list is : " + str(test_list)) 
+print ("Modified list is : " + str(test_list1)) 
 ```
