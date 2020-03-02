@@ -36,3 +36,15 @@ with open('/tmp/fewlines.txt') as myfile:
     for line in myfile:
         print(line.strip())
 ```
+
+Dictionary Methods
+
+```python
+# basic usage
+bugs = {'ant':10,'bee':3}
+bugs['fly'] = 5 #add to list
+bugs.update({'spider':22}) #similar to extend
+bugs.get('fly') #retrive value
+del bugs['spider']
+
+```
