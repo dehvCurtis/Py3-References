@@ -51,7 +51,7 @@ del bugs['spider']
 ```
 
 ## Examples
-###List Comprehension
+##List Comprehension
 Remove Empty Strings
 ```python
 test_list = ["", "I", "", "am","","the","", "best", ""] 
@@ -60,4 +60,30 @@ test_list1 = [i for i in test_list if i]
 
 print ("Original list is : " + str(test_list)) 
 print ("Modified list is : " + str(test_list1)) 
+
+output:
+Original list is : ['', 'I', '', 'am', '', 'the', '', 'best', '']
+Modified list is : ['I', 'am', 'the', 'best']
+```
+Remove Puncuation
+```python
+test_case = ['hello', '...', 'h3.a', 'ds4,']
+[s.translate(None, string.punctuation) for s in test_case]
+
+output:
+['hello', '', 'h3a', 'ds4']
+```
+
+##Exception Handling
+```python
+def be_careful(a,b):
+     try:
+         print(float(a)/float(b))
+     except (ValueError, TypeError, ZeroDivisionError) as detail:       
+         print(f"Handled Exception: {detail}")
+     except:
+         print('Unexpected error')
+     finally:
+         print('THIS WILL ALWAYS RUN')
+
 ```
